@@ -76,16 +76,6 @@ After completing this course, students will be able to:
 
 ---
 
-## Usage
-
-Clone the repository:
-
-```bash
-git clone https://github.com/<your-username>/24CSEN2131-Web-Application-Frameworks.git
-```
-
-Navigate to the required assignment or experiment folder and open the project in your preferred code editor.
-
 ## Student
 
 **Baswa Vinaya Sangeeta Lahari**  
