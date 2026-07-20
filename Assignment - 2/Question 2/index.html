@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechFest 2026 - College Event</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-title">
+        <img src="gitam-logo.svg" alt="College Logo" class="logo" />
+        <h1>GITAM University</h1>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#committee">Committee</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Event Banner -->
+    <section class="banner" id="home">
+      <h2>TechFest 2026</h2>
+      <p>An Annual Technical &amp; Cultural Fest of GITAM University</p>
+      <p>Date: 15th - 17th September 2026</p>
+    </section>
+
+    <!-- About the Event -->
+    <section class="about" id="about">
+      <h2>About the Event</h2>
+      <p>
+        TechFest 2026 is our college's biggest technical and cultural festival
+        that brings together students from various colleges to showcase their
+        talent, creativity, and technical skills. The fest includes
+        competitions, workshops, guest lectures, and cultural performances.
+      </p>
+      <p>Highlights of the fest include:</p>
+      <ul>
+        <li>Hackathons and coding competitions</li>
+        <li>Robotics and project exhibitions</li>
+        <li>Cultural dance and music performances</li>
+        <li>Guest lectures by industry experts</li>
+      </ul>
+    </section>
+
+    <!-- Event Schedule -->
+    <section class="schedule" id="schedule">
+      <h2>Event Schedule</h2>
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Event</th>
+          <th>Venue</th>
+        </tr>
+        <tr>
+          <td>Day 1</td>
+          <td>9:00 AM</td>
+          <td>Inauguration Ceremony</td>
+          <td>Main Auditorium</td>
+        </tr>
+        <tr>
+          <td>Day 1</td>
+          <td>11:00 AM</td>
+          <td>Coding Competition</td>
+          <td>Computer Lab</td>
+        </tr>
+        <tr>
+          <td>Day 2</td>
+          <td>10:00 AM</td>
+          <td>Robotics Workshop</td>
+          <td>Seminar Hall</td>
+        </tr>
+        <tr>
+          <td>Day 2</td>
+          <td>4:00 PM</td>
+          <td>Dance Competition</td>
+          <td>Open Air Theatre</td>
+        </tr>
+        <tr>
+          <td>Day 3</td>
+          <td>2:00 PM</td>
+          <td>Prize Distribution</td>
+          <td>Main Auditorium</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events" id="events">
+      <h2>Technical &amp; Cultural Events</h2>
+      <div class="event-cards">
+        <div class="card">
+          <h3>Hackathon</h3>
+          <p>24-hour coding challenge to build innovative solutions.</p>
+        </div>
+        <div class="card">
+          <h3>Robo Race</h3>
+          <p>Design and race your own robot on the track.</p>
+        </div>
+        <div class="card">
+          <h3>Paper Presentation</h3>
+          <p>Present your research and innovative ideas.</p>
+        </div>
+        <div class="card">
+          <h3>Dance Competition</h3>
+          <p>Showcase your dance moves solo or in groups.</p>
+        </div>
+        <div class="card">
+          <h3>Music Night</h3>
+          <p>Live band performances and singing competitions.</p>
+        </div>
+        <div class="card">
+          <h3>Photography Contest</h3>
+          <p>Capture the best moments of the fest and win prizes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="register" id="register">
+      <h2>Registration Form</h2>
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter your phone number"
+          required
+        />
+
+        <label for="college">College Name:</label>
+        <input
+          type="text"
+          id="college"
+          name="college"
+          placeholder="Enter your college name"
+          required
+        />
+
+        <label for="event">Select Event:</label>
+        <select id="event" name="event">
+          <option value="hackathon">Hackathon</option>
+          <option value="robo-race">Robo Race</option>
+          <option value="paper-presentation">Paper Presentation</option>
+          <option value="dance">Dance Competition</option>
+          <option value="music">Music Night</option>
+          <option value="photography">Photography Contest</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Any message or query"
+        ></textarea>
+
+        <button type="submit">Register Now</button>
+      </form>
+    </section>
+
+    <!-- Organizing Committee -->
+    <section class="committee" id="committee">
+      <h2>Organizing Committee</h2>
+      <div class="committee-members">
+        <div class="member">
+          <h3>Dr. A. Sharma</h3>
+          <p>Faculty Coordinator</p>
+        </div>
+        <div class="member">
+          <h3>Ravi Kumar</h3>
+          <p>Student Head</p>
+        </div>
+        <div class="member">
+          <h3>Priya Singh</h3>
+          <p>Technical Events Lead</p>
+        </div>
+        <div class="member">
+          <h3>Ankit Verma</h3>
+          <p>Cultural Events Lead</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>GITAM University, Rushikonda, Visakhapatnam, India</p>
+        <p>Email: techfest2026@brightfuture.edu</p>
+        <p>Phone: +91 98765 43210</p>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+      <p class="copyright">
+        &copy; 2026 GITAM University. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
