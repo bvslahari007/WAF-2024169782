@@ -1,0 +1,35 @@
+Problem Statement:
+Create a responsive online bookstore homepage that demonstrates the use of HTML elements, CSS styling,
+Flexbox, Grid, and media queries.
+Requirements:
+1. Design the following sections:
+✓ Header with bookstore logo and navigation menu
+✓ Hero banner
+✓ Book Categories
+✓ Featured Books (minimum six book cards)
+✓ Customer Reviews
+✓ Contact Form
+✓ Footer
+2. Use HTML elements including:
+✓ Headings and paragraphs
+✓ Hyperlinks
+✓ Ordered and unordered lists
+✓ Images
+✓ Tables displaying book details (Title, Author, Price, Rating)
+✓ Forms with appropriate input fields
+3. Apply CSS for:
+✓ Typography, colors, spacing, and backgrounds
+✓ Hover effects on buttons and navigation links
+✓ Card styling for books and reviews
+4. Use:
+✓ CSS Flexbox for the navigation bar and footer.
+✓ CSS Grid for arranging the featured book cards.
+5. Implement responsive layouts using media queries for desktop, tablet, and mobile devices.
+Deliverables:
+✓ index.html
+✓ style.css
+✓ Screenshots of the webpage in desktop, tablet, and mobile views.
+Learning Outcomes:
+✓ Create structured web pages using HTML5.
+✓ Apply CSS styling techniques.
+✓ Develop responsive layouts using Flexbox, Grid, and media queries
