@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student Management System</title>
+  </head>
+  <body>
+    <h2>Student Management System</h2>
+
+    <form method="POST" action="/7a/form_student">
+      <label>Student Name:</label>
+      <input type="text" name="name" required />
+      <br /><br />
+
+      <label>Department:</label>
+      <select name="department" required>
+        <option value="">Select Department</option>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+        <option value="Mechanical">Mechanical</option>
+        <option value="Civil">Civil</option>
+      </select>
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Clear" />
+    </form>
+
+    {% if error %}
+    <p style="color: red">{{ error }}</p>
+    {% endif %} {% if success %}
+    <h3>{{ success }}</h3>
+    <h3>Student Details</h3>
+    <p>Name: {{ name }}</p>
+    <p>Department: {{ department }}</p>
+    {% endif %}
+  </body>
+</html>

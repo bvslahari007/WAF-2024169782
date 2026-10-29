@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Employee Management System</title>
+  </head>
+  <body>
+    <h2>Employee Management System</h2>
+
+    <h3>Enter Employee Details</h3>
+
+    <form action="/" method="POST">
+      <label>Employee ID:</label>
+      <input type="number" name="employee_id" min="1" required />
+      <br /><br />
+
+      <label>Employee Name:</label>
+      <input type="text" name="name" required />
+      <br /><br />
+
+      <label>Department:</label>
+      <select name="department" required>
+        <option value="">Select Department</option>
+        <option value="HR">Human Resources</option>
+        <option value="IT">Information Technology</option>
+        <option value="Finance">Finance</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Sales">Sales</option>
+      </select>
+      <br /><br />
+
+      <label>Designation:</label>
+      <input type="text" name="designation" required />
+      <br /><br />
+
+      <label>Salary:</label>
+      <input type="number" name="salary" min="0" step="0.01" required />
+      <br /><br />
+
+      <label>Email:</label>
+      <input type="email" name="email" required />
+      <br /><br />
+
+      <input type="submit" value="Save Employee" />
+      <input type="reset" value="Clear" />
+    </form>
+
+    {% if error %}
+    <p style="color: red">{{ error }}</p>
+    {% endif %}
+
+    <hr />
+
+    <h3>Stored Employee Records</h3>
+
+    <table border="1" cellpadding="8">
+      <tr>
+        <th>Employee ID</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Designation</th>
+        <th>Salary</th>
+        <th>Email</th>
+      </tr>
+
+      {% for employee in employees %}
+      <tr>
+        <td>{{ employee['employee_id'] }}</td>
+        <td>{{ employee['name'] }}</td>
+        <td>{{ employee['department'] }}</td>
+        <td>{{ employee['designation'] }}</td>
+        <td>{{ employee['salary'] }}</td>
+        <td>{{ employee['email'] }}</td>
+      </tr>
+      {% else %}
+      <tr>
+        <td colspan="6">No employee records found.</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
