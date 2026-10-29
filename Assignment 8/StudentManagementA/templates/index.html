@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student Management System</title>
+  </head>
+  <body>
+    <h2>Student Information Management System</h2>
+
+    <form method="POST">
+      <label>Student Name:</label>
+      <input type="text" name="name" required />
+      <br /><br />
+
+      <label>Department:</label>
+      <select name="department" required>
+        <option value="">Select Department</option>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+        <option value="Mechanical">Mechanical</option>
+        <option value="Civil">Civil</option>
+      </select>
+      <br /><br />
+
+      <button type="submit">Add Student</button>
+      <button type="reset">Clear</button>
+    </form>
+
+    <p>{{ message }}</p>
+
+    <h3>Student Records</h3>
+
+    <table border="1" cellpadding="8">
+      <tr>
+        <th>Student Name</th>
+        <th>Department</th>
+      </tr>
+
+      {% for student in students %}
+      <tr>
+        <td>{{ student.name }}</td>
+        <td>{{ student.department }}</td>
+      </tr>
+      {% else %}
+      <tr>
+        <td colspan="2">No students added yet.</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
